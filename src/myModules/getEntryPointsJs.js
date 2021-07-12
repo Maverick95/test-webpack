@@ -2,8 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 const _source = 'myPages';
-const _filename = 'index.ts';
-
+const _filename = 'index.js';
 
 const getEntryPoints = () => {
 

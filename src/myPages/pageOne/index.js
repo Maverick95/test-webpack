@@ -1,6 +1,6 @@
 import _ from 'lodash';
 
-const component = (suffix: string): HTMLElement => {
+const component = (suffix) => {
   const element = document.createElement('div');
   element.innerHTML = _.join(['Hello', 'wbpack', 'this', 'is', 'a', suffix], ' ');
   return element;
