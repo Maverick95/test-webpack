@@ -1,9 +1,11 @@
-const getEntryPointsJs = require('./src/myModules/getEntryPointsJs.js');
+const getEntryPointsJs = require('./src/helpers/getEntryPointsJs');
 const path = require('path');
+
+const data = getEntryPointsJs();
 
 module.exports = {
   mode: 'production',
-  entry: getEntryPointsJs(),
+  entry: data.entries,
   output: {
     filename: 'script-[name].js',
     path: path.resolve(__dirname, 'dist'),
@@ -15,5 +17,9 @@ module.exports = {
         use: "ts-loader"
       }
     ],
+  },
+  plugins: data.outputs,
+  resolve: {
+    extensions: ['.js', '.ts'],
   },
 };

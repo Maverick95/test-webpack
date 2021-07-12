@@ -1,4 +1,4 @@
-import getChildrenLength from '../../helpers/getChildrenLength.ts';
+import getChildrenLength from '../../helpers/getChildrenLength';
 
 const generateCountElement = () => {
   const element = document.createElement('div');
