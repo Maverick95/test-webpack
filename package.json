@@ -4,6 +4,7 @@
   "description": "",
   "private": "true",
   "scripts": {
+    "analyze": "webpack --config webpack.config.js --analyze",
     "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
@@ -15,6 +16,7 @@
   "devDependencies": {
     "webpack": "^5.36.2",
     "webpack-cli": "^4.7.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "typescript": "4.3.5",
     "ts-loader": "^9.2.3",
     "html-webpack-plugin": "^5.3.2"
