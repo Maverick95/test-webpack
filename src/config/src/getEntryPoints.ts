@@ -3,7 +3,8 @@ const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const _source = 'myPages';
-const _filename = 'index.js';
+const _filename = 'index';
+const _suffix = 'ts';
 
 const getEntryPoints = () => {
 
@@ -20,7 +21,7 @@ const getEntryPoints = () => {
 
     contents.forEach(c => {
 
-      const filename = path.resolve(dirSource, c.name, _filename);
+      const filename = path.resolve(dirSource, c.name, `${_filename}.${_suffix}`);
 
       if (fs.existsSync(filename)) {
         entries[c.name] = { import: filename };

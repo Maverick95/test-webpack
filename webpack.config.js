@@ -1,4 +1,4 @@
-const getEntryPointsJs = require('./src/helpers/getEntryPointsJs');
+const getEntryPointsJs = require('./src/config/dist/getEntryPoints');
 const path = require('path');
 
 const data = getEntryPointsJs();
