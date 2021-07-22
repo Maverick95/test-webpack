@@ -13,13 +13,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.ts$/,
-        use: "ts-loader"
+        test: /\.[jt]sx?$/,
+        use: "babel-loader"
       }
     ],
   },
   plugins: data.outputs,
   resolve: {
-    extensions: ['.js', '.ts'],
+    extensions: ['.js', '.ts', '.jsx', '.tsx'],
   },
 };

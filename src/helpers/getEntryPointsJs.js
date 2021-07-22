@@ -27,6 +27,11 @@ const getEntryPoints = () => {
         outputs.push(new HtmlWebpackPlugin({
           filename: `${c.name}.html`,
           template: 'src/myPages/page.html',
+          templateParameters:
+          {
+            script: `script-${c.name}.js`,
+          },
+          inject: false,
         }));
       }
 
