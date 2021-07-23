@@ -1,10 +1,10 @@
-const path = require('path');
-const fs = require('fs');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import path from 'path';
+import fs from 'fs';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const _source = 'myPages';
-const _filename = 'index';
-const _suffix = 'ts';
+const _source: string = 'myPages';
+const _filename: string = 'index';
+const _suffix: string = 'ts';
 
 const getEntryPoints = () => {
 
